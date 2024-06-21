@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Monster</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="ms-auto me-auto">
+    <a class="text-white p-3 rounded mt-2 pt-4 text-decoration-none bg-info" href="blog.html">
+      Blog
+    </a>
+  </div>
+
+  <h1 class="title"><img src="./logo.png" /></h1>
+  <div id="show-time">0 seconds</div>
+
+  <div class="box-container">
+    <div id="question"></div>
+
+    <div id="display" class="inactive"></div>
+
+    <div class="buttons">
+      <button id="starts">START</button>
+    </div>
+
+    <div class="divider-container">
+      <div class="line"></div>
+      <h1 class="title2">History</h1>
+      <div class="line"></div>
+    </div>
+    <!-- row-cols-md-3 row-cols-lg-3 row-cols-xl-3 -->
+    <div id="histories" class="row gx-5"></div>
+  </div>
+
+  <div id="countdown"></div>
+
+  <div id="modal-background" class="hidden"></div>
+  <div class=" d-flex justify-content-center align-items-center ">
+    <div id="result" class="hidden"></div>
+
+  </div>
+
+  <script src="./history.js"></script>
+  <script src="./script.js"></script>
+
+
+</body>
+
+</html>
